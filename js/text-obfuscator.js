@@ -139,22 +139,19 @@ function obfuscateText() {
     for (var i = 0; i < input.length; i++) {
         var character = input[i];
         var wasObfuscated = false;
+        var candidates = "";
 
-        // 40% chance to obfuscate
-        if (Math.floor(Math.random() * 10) + 1 <= 6) {
-            var candidates = "";
+        if (identicalReplacements[character]) {
+            candidates = identicalReplacements[character];
+        }
 
-            if (identicalReplacements[character]) {
-                candidates = identicalReplacements[character];
-            }
+        if ($("#approximateCharactersCheckbox").is(':checked') && approximateReplacements[character]) {
+            candidates += approximateReplacements[character];
+        }
 
-            if ($("#approximateCharactersCheckbox").is(':checked') && approximateReplacements[character]) {
-                candidates += approximateReplacements[character];
-            }
-
-            if (candidates != null && candidates.length > 0) {
+        if (candidates != null && candidates.length > 0) {
+            if (Math.floor(Math.random() * 10) + 1 <= 6) {
                 var randomCandidateIndex = Math.floor(Math.random() * candidates.length);
-    
                 output += candidates[randomCandidateIndex];
                 wasObfuscated = true;
             }
