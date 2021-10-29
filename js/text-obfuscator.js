@@ -98,7 +98,7 @@ function obfuscateText() {
         var wasObfuscated = false;
 
         // 40% chance to obfuscate
-        if (Math.floor(Math.random() * 10) + 1 <= 4) {
+        if (Math.floor(Math.random() * 10) + 1 <= 6) {
             var candidates = "";
 
             if (identicalReplacements[character]) {
