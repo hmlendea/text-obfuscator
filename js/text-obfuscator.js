@@ -42,6 +42,20 @@ var identicalReplacements = {
     "ÿ": "ӱ"
 }
 
+var approximateReplacements = {
+    "3": "Ӡ",
+    "6": "б",
+
+    "Ș": "ŞṢ",
+    "Ț": "ŢṬ",
+
+    "b": "Ь",
+    "h": "һ", // Confirmed to look quite different in some fonts
+    "k": "к",
+    "ș": "şṣ",
+    "ț": "ţṭ"
+}
+
 var characters = lowercase + uppercase + digits + punctuation;
 var charactersCount = characters.length;
 
@@ -55,8 +69,17 @@ function obfuscateText() {
 
         // 40% chance to obfuscate
         if (Math.floor(Math.random() * 10) + 1 <= 4) {
+            var candidates = "";
+
             if (identicalReplacements[character]) {
-                var candidates = identicalReplacements[character];
+                candidates = identicalReplacements[character];
+            }
+
+            if ($("#approximateCharactersCheckbox").is(':checked') && approximateReplacements[character]) {
+                candidates += approximateReplacements[character];
+            }
+
+            if (candidates != null && candidates.length > 0) {
                 var randomCandidateIndex = Math.floor(Math.random() * candidates.length);
     
                 output += candidates[randomCandidateIndex];
