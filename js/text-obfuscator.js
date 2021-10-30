@@ -1,59 +1,133 @@
 var identicalReplacements = {
+    ",": "͵",
+    ";": ";",
+    "|": "ǀ",
+    "ǀ": "|",
+    
+    // 2 // The following don't work in some fonts: 𝟤
     "3": "З",
+    "Ʒ": "Ӡ",
+    "Ӡ": "Ʒ",
+    "6": "Ꮾ",
 
-    "A": "А",
-    "Ă": "Ă",
-    "B": "В",
-    "C": "С",
-    "Ð": "ĐƉ",
+    "Ă": "Ӑ",
+    "A": "АΑᎪꓮ", // The following don't work in some fonts: 𝖠
+    "B": "ВΒᏴꓐ",
+    "C": "СϹᏟꓚ",
+    "D": "Ꭰꓓ",
     "Đ": "ÐƉ",
+    "Ð": "ĐƉ",
     "Ɖ": "ÐĐ",
-    "E": "ЕΕ",
-    "Ë": "Ё",
+    "E": "ЕΕᎬꓰ",
     "Ĕ": "Ӗ",
-    "H": "Н",
+    "Ë": "Ё",
+    "F": "ꓝ",
+    "G": "Ꮐꓖ",
+    "H": "НΗᎻꓧ",
     "I": "ІΙӀӏ",
-    "J": "Ј",
-    "K": "К",
+    "Ï": "ЇΪ",
+    "J": "ЈᎫꓙ",
+    "K": "КΚᏦꓗ",
     "Ḱ": "Ќ",
-    "M": "М",
-    "O": "ОΟ",
+    "L": "ᏞꓡԼ",
+    "M": "МΜᎷꓟ",
+    "N": "Νꓠ",
+    "O": "ОΟꓳՕ",
     "Ӧ": "Ö",
-    "P": "Р",
-    "X": "Х",
-    "T": "Т",
-    "Y": "Ү",
+    "Ө": "Ѳθ",
+    "ϴ": "ƟᎾ",
+    "P": "РΡᏢꓑ",
+    "R": "Ꮢꓣ",
+    "Q": "Ԛ",
+    "S": "ЅᏚꓢՏ",
+    "T": "ТΤᎢꓔ",
+    "U": "Սꓴ",
+    "V": "Ꮩꓦ",
+    "W": "ԜᎳꓪ",
+    "X": "ХΧꓫ",
+    "Y": "ҮΥꓬ",
+    "Z": "ΖᏃꓜ",
 
-    "a": "а",
+    "a": "а", // The following don't work in some fonts: 𝖺
     "ă": "ӑ",
-    "c": "с",
-    "e": "е",
+    // b // The following don't work in some fonts: 𝖻
+    "c": "сϲꮯᴄⅽ",
+    "d": "ⅾ", // The following don't work in some fonts: 𝖽. The following look to different in soem fonts: ԁ
+    "e": "е", // The following don't work in some fonts: 𝖾
     "ë": "ё",
     "ĕ": "ӗ",
+    "h": "հ",
     "i": "і",
+    "ï": "ї",
     "j": "ј",
-    "o": "о",
+    "к": "κ",
+    "κ": "к",
+    "ɫ": "ɬᏐ",
+    // n // The following don't work in some fonts: ո𝗇
+    "o": "оοօ",
     "ӧ": "ö",
-    "ó": "ό",
+    "ó": "όό",
+    "ò": "ὸ",
+    "ө": "ɵꮎ",
+    "θ": "ӨѲ",
     "p": "р",
-    "ú": "ύ",
+    "q": "ԛ",
+    "s": "ѕꮪꜱ", // The following don't work in some fonts: 𝗌
+    // u // The following don't work in some fonts: ս
+    "v": "ꮩ",
+    "w": "ԝꮃ",
     "x": "х",
     "y": "у",
-    "ÿ": "ӱ"
+    "ÿ": "ӱ",
+    "z": "ꮓ"
 }
 
 var approximateReplacements = {
-    "3": "Ӡ",
+    "'": "ʹ",
+    
+    "3": "ӠƷ",
+    "Ʒ": "3З",
+    "Ӡ": "3З",
     "6": "б",
 
+    "F": "Ϝ", // Ϝ does not look identical in some fonts
+    "I": "ꓲ", // Stretch
+    "J": "Ϳ",
+    "M": "Ϻ",
+    "Ө": "ƟϴᎾ",
+    "Q": "Ǫ",
+    "R": "Ꭱ",
     "Ș": "ŞṢ",
+    "Ş": "ȘṢ",
+    "Ṣ": "ȘŞ",
     "Ț": "ŢṬ",
-
-    "b": "Ь",
-    "h": "һ", // Confirmed to look quite different in some fonts
-    "k": "к",
+    "Ţ": "ȚṬ",
+    "Ṭ": "ȚŢ",
+    "W": "Ꮤ",
+    // "X": "Ꭓ"
+    
+    "b": "Ь", // "Ꮟ"
+    "g": "ց",
+    "h": "Ꮒ", // "һ", // Confirmed to look quite different in many fonts
+    "i": "Ꭵⅰ", // This might be a bit of a stretch
+    "ı": "ɪ",
+    "ɪ": "ı",
+    "j": "ϳ",
+    "k": "кκꮶ",
+    "ł": "ɫɬᏐ",
+    "ɫ": "ł",
+    "ɬ": "ł",
+    "p": "ρ",
     "ș": "şṣ",
-    "ț": "ţṭ"
+    "ş": "șṣ",
+    "ṣ": "șş",
+    "ț": "ţṭ",
+    "ţ": "țṭ",
+    "ṭ": "țţ",
+    // u // The following don't work in some fonts: 𐓶
+    "ú": "ύ",
+    "w": "ꮤ",
+    "y": "γ"
 }
 
 var characters = lowercase + uppercase + digits + punctuation;
@@ -66,22 +140,19 @@ function obfuscateText() {
     for (var i = 0; i < input.length; i++) {
         var character = input[i];
         var wasObfuscated = false;
+        var candidates = "";
 
-        // 40% chance to obfuscate
-        if (Math.floor(Math.random() * 10) + 1 <= 4) {
-            var candidates = "";
+        if (identicalReplacements[character]) {
+            candidates = identicalReplacements[character];
+        }
 
-            if (identicalReplacements[character]) {
-                candidates = identicalReplacements[character];
-            }
+        if ($("#approximateCharactersCheckbox").is(':checked') && approximateReplacements[character]) {
+            candidates += approximateReplacements[character];
+        }
 
-            if ($("#approximateCharactersCheckbox").is(':checked') && approximateReplacements[character]) {
-                candidates += approximateReplacements[character];
-            }
-
-            if (candidates != null && candidates.length > 0) {
+        if (candidates != null && candidates.length > 0) {
+            if (Math.floor(Math.random() * 10) + 1 <= 6) {
                 var randomCandidateIndex = Math.floor(Math.random() * candidates.length);
-    
                 output += candidates[randomCandidateIndex];
                 wasObfuscated = true;
             }
