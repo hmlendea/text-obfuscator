@@ -50,9 +50,9 @@ var identicalReplacements = {
 
     "a": "а", // The following don't work in some fonts: 𝖺
     "ă": "ӑ",
-    // b // The following don't work in some fonts: 𝖻
+    // The following don't work in some fonts: 𝖻. The following are invisible in some fonts: b‍
     "c": "сϲꮯᴄⅽ",
-    "d": "ⅾ", // The following don't work in some fonts: 𝖽. The following look to different in soem fonts: ԁ
+    "d": "ⅾ", // The following don't work in some fonts: 𝖽. The following look to different in some fonts: ԁ
     "e": "е", // The following don't work in some fonts: 𝖾
     "ë": "ё",
     "ĕ": "ӗ",
@@ -112,6 +112,7 @@ var approximateReplacements = {
     "i": "Ꭵⅰ", // This might be a bit of a stretch
     "ı": "ɪ",
     "ɪ": "ı",
+    "ĭ": "ǐ",
     "j": "ϳ",
     "k": "кκꮶ",
     "ł": "ɫɬᏐ",
