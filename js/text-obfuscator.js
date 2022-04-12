@@ -33,12 +33,12 @@ var identicalReplacements = {
     "M": "МΜᎷꓟ",
     "N": "Νꓠ",
     "O": "ОΟꓳՕ",
-    "Ӧ": "Ö",
+    "Ö": "Ӧ",
     "Ө": "Ѳθ",
     "ϴ": "ƟᎾ",
     "P": "РΡᏢꓑ",
-    "R": "Ꮢꓣ",
     "Q": "Ԛ",
+    "R": "Ꮢꓣ",
     "S": "ЅᏚꓢՏ",
     "T": "ТΤᎢꓔ",
     "U": "Սꓴ",
@@ -56,6 +56,7 @@ var identicalReplacements = {
     "e": "е", // The following don't work in some fonts: 𝖾
     "ë": "ё",
     "ĕ": "ӗ",
+    // The following don't work in some fonts: g‍
     "h": "հ",
     "i": "і",
     "ï": "ї",
@@ -65,7 +66,7 @@ var identicalReplacements = {
     "ɫ": "ɬᏐ",
     // n // The following don't work in some fonts: ո𝗇
     "o": "оοօ",
-    "ӧ": "ö",
+    "ö": "ӧ",
     "ó": "όό",
     "ò": "ὸ",
     "ө": "ɵꮎ",
@@ -125,6 +126,7 @@ var approximateReplacements = {
     "ţ": "țṭ",
     "ṭ": "țţ",
     // u // The following don't work in some fonts: 𐓶
+    "u": "υ",
     "ú": "ύ",
     "w": "ꮤ",
     "y": "γ"
