@@ -33,12 +33,12 @@ var identicalReplacements = {
     "M": "МΜᎷꓟ",
     "N": "Νꓠ",
     "O": "ОΟꓳՕ",
-    "Ӧ": "Ö",
+    "Ö": "Ӧ",
     "Ө": "Ѳθ",
     "ϴ": "ƟᎾ",
     "P": "РΡᏢꓑ",
-    "R": "Ꮢꓣ",
     "Q": "Ԛ",
+    "R": "Ꮢꓣ",
     "S": "ЅᏚꓢՏ",
     "T": "ТΤᎢꓔ",
     "U": "Սꓴ",
@@ -50,12 +50,13 @@ var identicalReplacements = {
 
     "a": "а", // The following don't work in some fonts: 𝖺
     "ă": "ӑ",
-    // b // The following don't work in some fonts: 𝖻
+    // The following don't work in some fonts: 𝖻. The following are invisible in some fonts: b‍
     "c": "сϲꮯᴄⅽ",
-    "d": "ⅾ", // The following don't work in some fonts: 𝖽. The following look to different in soem fonts: ԁ
+    "d": "ⅾ", // The following don't work in some fonts: 𝖽. The following look too different in some fonts: ԁ
     "e": "е", // The following don't work in some fonts: 𝖾
     "ë": "ё",
     "ĕ": "ӗ",
+    // The following don't work in some fonts: g‍
     "h": "հ",
     "i": "і",
     "ï": "ї",
@@ -65,7 +66,7 @@ var identicalReplacements = {
     "ɫ": "ɬᏐ",
     // n // The following don't work in some fonts: ո𝗇
     "o": "оοօ",
-    "ӧ": "ö",
+    "ö": "ӧ",
     "ó": "όό",
     "ò": "ὸ",
     "ө": "ɵꮎ",
@@ -85,8 +86,7 @@ var identicalReplacements = {
 var approximateReplacements = {
     "'": "ʹ",
     
-    "3": "ӠƷ",
-    "Ʒ": "3З",
+    "3": "Ӡ", // The following look too different: Ʒ
     "Ӡ": "3З",
     "6": "б",
 
@@ -112,6 +112,7 @@ var approximateReplacements = {
     "i": "Ꭵⅰ", // This might be a bit of a stretch
     "ı": "ɪ",
     "ɪ": "ı",
+    "ĭ": "ǐ",
     "j": "ϳ",
     "k": "кκꮶ",
     "ł": "ɫɬᏐ",
@@ -125,6 +126,7 @@ var approximateReplacements = {
     "ţ": "țṭ",
     "ṭ": "țţ",
     // u // The following don't work in some fonts: 𐓶
+    "u": "υ",
     "ú": "ύ",
     "w": "ꮤ",
     "y": "γ"
