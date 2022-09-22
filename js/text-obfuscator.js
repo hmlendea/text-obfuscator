@@ -3,7 +3,7 @@ var identicalReplacements = {
     ";": ";",
     "|": "ǀ",
     "ǀ": "|",
-    
+
     // 2 // The following don't work in some fonts: 𝟤
     "3": "З",
     "Ʒ": "Ӡ",
@@ -36,11 +36,17 @@ var identicalReplacements = {
     "Ö": "Ӧ",
     "Ө": "Ѳθ",
     "ϴ": "ƟᎾ",
-    "P": "РΡᏢꓑ",
+    "P": "РΡᏢ",
     "Q": "Ԛ",
-    "R": "Ꮢꓣ",
-    "S": "ЅᏚꓢՏ",
+    "R": "ᏒᎡ",
+    "S": "ЅᏚ",
+    "Ș": "ŞṢ",
+    "ŞṢȘ": "ȘṢ",
+    "ṢȘ": "ȘŞ",
     "T": "ТΤᎢꓔ",
+    "Ț": "ŢṬ",
+    "Ţ": "ȚṬ",
+    "Ṭ": "ȚŢ",
     "U": "Սꓴ",
     "V": "Ꮩꓦ",
     "W": "ԜᎳꓪ",
@@ -51,13 +57,12 @@ var identicalReplacements = {
     "a": "а", // The following don't work in some fonts: 𝖺
     "ă": "ӑ",
     // The following don't work in some fonts: 𝖻. The following are invisible in some fonts: b‍
-    "c": "сϲꮯᴄⅽ",
+    "c": "сϲᴄⅽ",
     "d": "ⅾ", // The following don't work in some fonts: 𝖽. The following look too different in some fonts: ԁ
     "e": "е", // The following don't work in some fonts: 𝖾
     "ë": "ё",
     "ĕ": "ӗ",
     // The following don't work in some fonts: g‍
-    "h": "հ",
     "i": "і",
     "ï": "ї",
     "j": "ј",
@@ -85,7 +90,7 @@ var identicalReplacements = {
 
 var approximateReplacements = {
     "'": "ʹ",
-    
+
     "3": "Ӡ", // The following look too different: Ʒ
     "Ӡ": "3З",
     "6": "б",
@@ -95,19 +100,17 @@ var approximateReplacements = {
     "J": "Ϳ",
     "M": "Ϻ",
     "Ө": "ƟϴᎾ",
+    "P": "ꓑ",
     "Q": "Ǫ",
-    "R": "Ꭱ",
-    "Ș": "ŞṢ",
-    "Ş": "ȘṢ",
-    "Ṣ": "ȘŞ",
-    "Ț": "ŢṬ",
-    "Ţ": "ȚṬ",
-    "Ṭ": "ȚŢ",
+    "R": "ꓣ",
+    "S": "ꓢՏ",
     "W": "Ꮤ",
     // "X": "Ꭓ"
-    
+
     "b": "Ь", // "Ꮟ"
+    "b": "ꮯ", // "ꮯ" has a weird top right at least on iOS
     "g": "ց",
+    //"h": "հ", // "հ" looks like some arabic letter on iOS
     "h": "Ꮒ", // "һ", // Confirmed to look quite different in many fonts
     "i": "Ꭵⅰ", // This might be a bit of a stretch
     "ı": "ɪ",
@@ -159,7 +162,7 @@ function obfuscateText() {
                 wasObfuscated = true;
             }
         }
-        
+
         if (!wasObfuscated) {
             output += input[i];
         }
@@ -172,6 +175,6 @@ function copyText() {
     var copyText = document.getElementById("output");
     copyText.select();
     copyText.setSelectionRange(0, 99999);
-  
+
     document.execCommand("copy");
 }
