@@ -79,6 +79,12 @@ var identicalReplacements = {
     "p": "р",
     "q": "ԛ",
     "s": "ѕꮪꜱ", // The following don't work in some fonts: 𝗌
+    "ș": "şṣ",
+    "ş": "șṣ",
+    "ṣ": "șş",
+    "ț": "ţṭ",
+    "ţ": "țṭ",
+    "ṭ": "țţ",
     // u // The following don't work in some fonts: ս
     "v": "ꮩ",
     "w": "ԝꮃ",
@@ -122,12 +128,6 @@ var approximateReplacements = {
     "ɫ": "ł",
     "ɬ": "ł",
     "p": "ρ",
-    "ș": "şṣ",
-    "ş": "șṣ",
-    "ṣ": "șş",
-    "ț": "ţṭ",
-    "ţ": "țṭ",
-    "ṭ": "țţ",
     // u // The following don't work in some fonts: 𐓶
     "u": "υ",
     "ú": "ύ",
