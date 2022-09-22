@@ -108,7 +108,9 @@ var approximateReplacements = {
     // "X": "Ꭓ"
 
     "b": "Ь", // "Ꮟ"
+    "b": "ꮯ", // "ꮯ" has a weird top right at least on iOS
     "g": "ց",
+    //"h": "հ", // "հ" looks like some arabic letter on iOS
     "h": "Ꮒ", // "һ", // Confirmed to look quite different in many fonts
     "i": "Ꭵⅰ", // This might be a bit of a stretch
     "ı": "ɪ",
