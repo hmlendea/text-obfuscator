@@ -156,7 +156,7 @@ var identicalReplacements = {
     "θ": "ӨѲ𖺀",
     "p": "р",
     "q": "ԛ",
-    "s": "ѕꜱ", // The following don't work in some fonts: 𝗌
+    "s": "ѕ", // The following don't work in some fonts: 𝗌
     "ș": "şṣ",
     "ş": "șṣ",
     "ṣ": "șş",
@@ -220,7 +220,7 @@ var approximateReplacements = {
     "ɬ": "ł",
     "o": "ഠ", // The following look different in some fonts: ೦
     "p": "ρ",
-    "s": "ടꮪ",
+    "s": "ടꮪꜱ", // ꜱ looks ok but doesn't work on e.g. Apple Watch
     // u // The following don't work in some fonts: 𐓶
     "u": "υ",
     "ú": "ύ",
