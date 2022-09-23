@@ -87,7 +87,7 @@ var identicalReplacements = {
     "Ă": "Ӑ",
     "Â": "Ȃ",
     "B": "ВΒᏴꓐ", // The following don't work in some fonts: 𝖡
-    "C": "ꓚᏟⅭᑕ", // The following don't work in some fonts: C𝖢
+    "C": "ꓚⅭ", // The following don't work in some fonts: C𝖢
     "D": "ᗞᎠⅮꓓ", // The following don't work in some fonts: 𝖣
     "Đ": "ÐƉ",
     "Ð": "ĐƉ",
@@ -144,7 +144,7 @@ var identicalReplacements = {
     "î": "ȋ",
     "ï": "ї",
     "j": "ј",
-    "k": "κĸк",
+    "k": "ĸк",
     "ɫ": "ɬᏐ",
     "m": "ⅿ", // The following don't work in some fonts: ՠ
     // n // The following don't work in some fonts: ո𝗇
@@ -156,7 +156,7 @@ var identicalReplacements = {
     "θ": "ӨѲ𖺀",
     "p": "р",
     "q": "ԛ",
-    "s": "ѕꜱ", // The following don't work in some fonts: 𝗌
+    "s": "ѕ", // The following don't work in some fonts: 𝗌
     "ș": "şṣ",
     "ş": "șṣ",
     "ṣ": "șş",
@@ -164,7 +164,6 @@ var identicalReplacements = {
     "ţ": "țṭ",
     "ṭ": "țţ",
     // u // The following don't work in some fonts: ս
-    "v": "ꮩ",
     "w": "ԝꮃ",
     "x": "х",
     "y": "уү",
@@ -183,6 +182,7 @@ var approximateReplacements = {
     "A": "ᗅ",
     "Ă": "ǍĀ",
     "B": "ᗷꕗ",
+    "C": "Ꮯᑕ",
     "E": "ⴹ⋿ꗋ",
     "F": "Ϝ", // Ϝ does not look identical in some fonts
     "G": "Ⴚ",
@@ -214,18 +214,18 @@ var approximateReplacements = {
     "ɪ": "ı",
     "ĭ": "ǐ",
     "j": "ϳ",
-    "k": "кκꮶ",
+    "k": "κкκꮶ",
     "ł": "ɫɬᏐ",
     "ɫ": "ł",
     "ɬ": "ł",
-    "o": "೦ഠ",
+    "o": "ഠ", // The following look different in some fonts: ೦
     "p": "ρ",
-    "s": "ടꮪ",
+    "s": "ടꮪꜱ", // ꜱ looks ok but doesn't work on e.g. Apple Watch
     // u // The following don't work in some fonts: 𐓶
     "u": "υ",
     "ú": "ύ",
-    "v": "νⅴ", // The following have large paddings: ∨
-    "w": "ꮤ",
+    "v": "ꮩνⅴ", // The following have large paddings: ∨
+    "w": "ꮤ", // The following look different in some fonts: ꮃ
     "x": "ⅹ",
     "y": "γʏ"
 }
