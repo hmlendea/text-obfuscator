@@ -86,48 +86,48 @@ var identicalReplacements = {
     "A": "АΑᎪꓮ", // The following don't work in some fonts: 𝖠
     "Ă": "Ӑ",
     "Â": "Ȃ",
-    "B": "В𝖡ΒᏴꕗꓐ",
-    "C": "С𝖢ⅭᏟꓚ",
-    "D": "Ꭰ𝖣Ⅾꓓ",
+    "B": "ВΒᏴꓐ", // The following don't work in some fonts: 𝖡
+    "C": "ꓚᏟⅭᑕ", // The following don't work in some fonts: C𝖢
+    "D": "ᗞᎠⅮꓓ", // The following don't work in some fonts: 𝖣
     "Đ": "ÐƉ",
     "Ð": "ĐƉ",
     "Ɖ": "ÐĐ",
-    "E": "Е𝖤Ε⋿Ꭼꗋꓰ",
+    "E": "ЕΕᎬꓰ", // The following don't work in some fonts: 𝖤
     "Ĕ": "Ӗ",
     "Ë": "Ё",
-    "F": "ꓝ𝖥",
-    "G": "Ꮐ𝖦ꓖ",
-    "H": "Н𝖧ΗᎻꓧ",
-    "I": "ІΙӀӏꕯ",
+    "Ë": "ꓝ", // The following don't work in some fonts: 𝖥
+    "G": "Ꮐꓖ", // The following don't work in some fonts: 𝖦
+    "H": "НΗᎻꓧ", // The following don't work in some fonts: 𝖧
+    "I": "ІΙӀӏ",
     "Î": "Ȋ",
     "Ï": "ЇΪ",
-    "J": "𝖩ЈᎫꓙ",
-    "K": "К𝖪KΚᏦꓗ",
+    "J": "ЈᎫꓙ", // The following don't work in some fonts: 𝖩 // The following look different in some fonts: Ϳ
+    "K": "КKΚᏦꓗ", // The following don't work in some fonts: 𝖪
     "Ḱ": "Ќ",
-    "L": "Ⅼ𝖫Ꮮ𐐛ꓡԼ",
-    "M": "М𝖬ΜᎷꓟ",
-    "N": "Ν𝖭ꓠ",
-    "O": "О𝖮Ο𐓂ꓳՕ𖫩",
+    "L": "ⅬᏞꓡ", // The following don't work in some fonts: 𝖫𐐛
+    "M": "МΜϺ", // The following don't work in some fonts: 𝖬
+    "N": "Νꓠ", // The following don't work in some fonts: 𝖭
+    "O": "ОΟՕꓳ", // The following don't work in some fonts: 𝖮𐓂𖫩
     "Ö": "Ӧ",
     "Ө": "Ѳθ",
     "ϴ": "ƟᎾ",
-    "P": "Р𝖯ΡᏢ",
-    "Q": "Ԛ𝖰Ⴍ",
-    "R": "Ꮢ𝖱Ꭱ",
-    "S": "Ѕ𝖲ᏚႽჽ𖫖",
+    "P": "РΡᏢ", // The following don't work in some fonts: 𝖯
+    "Q": "ԚႭ", // The following don't work in some fonts: 𝖰
+    "R": "Ꮢ", // The following don't work in some fonts: 𝖱
+    "S": "ЅᏚჽႽ", // The following don't work in some fonts: 𖫖𝖲
     "Ș": "ŞṢ",
     "ŞṢȘ": "ȘṢ",
     "ṢȘ": "ȘŞ",
-    "T": "Т𝖳ΤᎢꔋߠꓔ",
+    "T": "ТΤᎢꓔ", // The following don't work in some fonts: 𝖳 // The following combines with nearby letters: ߠ
     "Ț": "ŢṬ",
     "Ţ": "ȚṬ",
     "Ṭ": "ȚŢ",
-    "U": "𐓎𝖴⋃Սꓴ",
-    "V": "Ꮩ𝖵Ⅴⴸꛟꓦ",
-    "W": "𝖶ԜᎳꓪ",
-    "X": "𝖷ХⅩΧⵝꓫ",
-    "Y": "Ү𝖸Υꓬ",
-    "Z": "Ζ𝖹ᏃჍꛉꓜz",
+    "U": "ꓴՍ", // The following don't work in some fonts: 𝖴𐓎
+    "V": "ᏙⅤⴸꛟꓦ", // The following don't work in some fonts: 𝖵
+    "W": "ԜᎳꓪ", // The following don't work in some fonts: 𝖶
+    "X": "ХⅩΧⵝꓫ", // The following don't work in some fonts: 𝖷
+    "Y": "ΥҮꓬ", // The following don't work in some fonts: 𝖸
+    "Z": "ΖᏃჍꛉꓜ", // The following don't work in some fonts: 𝖹
 
     "a": "а", // The following don't work in some fonts: 𝖺
     "ă": "ӑ",
@@ -146,9 +146,9 @@ var identicalReplacements = {
     "j": "ј",
     "k": "κĸк",
     "ɫ": "ɬᏐ",
-    "m": "ՠⅿ",
+    "m": "ⅿ", // The following don't work in some fonts: ՠ
     // n // The following don't work in some fonts: ո𝗇
-    "o": "оοօ௦೦ഠჿ𐐬𐓪",
+    "o": "оօοჿ", // The following don't work in some fonts: 𐓪𐐬 // The following is looks too differnt in some fonts: ௦
     "ö": "ӧ",
     "ó": "όό",
     "ò": "ὸ",
@@ -156,7 +156,7 @@ var identicalReplacements = {
     "θ": "ӨѲ𖺀",
     "p": "р",
     "q": "ԛ",
-    "s": "ѕꮪꜱട", // The following don't work in some fonts: 𝗌
+    "s": "ѕꜱ", // The following don't work in some fonts: 𝗌
     "ș": "şṣ",
     "ş": "șṣ",
     "ṣ": "șş",
@@ -182,30 +182,28 @@ var approximateReplacements = {
 
     "A": "ᗅ",
     "Ă": "ǍĀ",
-    "B": "ᗷ",
-    "C": "ᑕ𞤌",
-    "D": "ᗞ",
-    "E": "ⴹ",
+    "B": "ᗷꕗ",
+    "E": "ⴹ⋿ꗋ",
     "F": "Ϝ", // Ϝ does not look identical in some fonts
     "G": "Ⴚ",
-    "I": "𝖨ꓲ𞥑Ⅰ𞠢ⵏߊ", // Stretch
-    "J": "Ϳ",
-    "M": "ϺⅯ",
+    "I": "ꓲⅠⵏߊꕯ", // Stretch // The following look different on some fonts: ꕯ // The following don't work on some fonts: 𝖨𞥑 𞠢
+    // The following looks too different: Լ
+    "M": "ꓟᎷⅯ",
     "O": "ⵔ",
     "Ө": "ƟϴᎾ",
     "P": "ꓑ",
     "Q": "Ǫ",
-    "R": "ꓣ",
+    "R": "Ꭱꓣ",
     "S": "ꓢՏ",
-    "T": "ㄒ",
+    "T": "ㄒꔋ",
     "Ț": "Ҭ",
-    "U": "ᑌ𞤋",
+    // "U": // The following don't work in some fonts: 𞤋 // The following look too different in some fonts: ᑌ⋃
     "V": "ᐯ",
     "W": "Ꮤ",
     // "X": "᙭Ꭓχ"
 
     "ă": "ǎā",
-    "b": "Ьƅხ", // "Ꮟ"
+    // "b": // The following are broken in some fonts: ხ // The following look different in some fonts: ᏏЬƅ
     "c": "ꮯⅽ", // "ꮯ" has a weird top right at least on iOS
     "d": "ძ",
     "g": "ɡց",
@@ -220,18 +218,17 @@ var approximateReplacements = {
     "ł": "ɫɬᏐ",
     "ɫ": "ł",
     "ɬ": "ł",
+    "o": "೦ഠ",
     "p": "ρ",
+    "s": "ടꮪ",
     // u // The following don't work in some fonts: 𐓶
     "u": "υ",
     "ú": "ύ",
-    "v": "νⅴ∨",
+    "v": "νⅴ", // The following have large paddings: ∨
     "w": "ꮤ",
     "x": "ⅹ",
     "y": "γʏ"
 }
-
-var characters = lowercase + uppercase + digits + punctuation;
-var charactersCount = characters.length;
 
 function obfuscateText() {
     var input = $("#input").val();
