@@ -1,3 +1,24 @@
+var identicalGroupReplacements = {
+    "DZ": "Ǳ",
+    "Dz": "ǲ",
+    "dz": "ǳ",
+    "IJ": "Ĳ",
+    "ij": "ĳ",
+    "LJ": "Ǉ",
+    "Lj": "ǈ",
+    "lj": "ǉ",
+    "NJ": "Ǌ",
+    "Nj": "ǋ",
+    "nj": "ǌ"
+}
+
+var approximateGroupReplacements = {
+    "dz": "ʣ",
+    "ls": "ʪ",
+    "lz": "ʫ",
+    "ts": "ʦ"
+}
+
 var identicalReplacements = {
     ",": "͵",
     ";": ";",
@@ -141,6 +162,28 @@ var charactersCount = characters.length;
 function obfuscateText() {
     var input = $("#input").val();
     var output = '';
+
+    for (var [group, candidates] of Object.entries(identicalGroupReplacements)) {
+        var replacement = group;
+
+        if (Math.floor(Math.random() * 10) + 1 <= 6) {
+            var randomCandidateIndex = Math.floor(Math.random() * candidates.length);
+            replacement = candidates[randomCandidateIndex];
+        }
+
+        input = input.replace(group, replacement);
+    }
+
+    for (var [group, candidates] of Object.entries(approximateGroupReplacements)) {
+        var replacement = group;
+
+        if (Math.floor(Math.random() * 10) + 1 <= 6) {
+            var randomCandidateIndex = Math.floor(Math.random() * candidates.length);
+            replacement = candidates[randomCandidateIndex];
+        }
+
+        input = input.replace(group, replacement);
+    }
 
     for (var i = 0; i < input.length; i++) {
         var character = input[i];
