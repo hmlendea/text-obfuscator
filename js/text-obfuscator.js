@@ -218,7 +218,7 @@ var approximateReplacements = {
     "ł": "ɫɬᏐ",
     "ɫ": "ł",
     "ɬ": "ł",
-    "o": "೦ഠ",
+    "o": "ഠ", // The following look different in some fonts: ೦
     "p": "ρ",
     "s": "ടꮪ",
     // u // The following don't work in some fonts: 𐓶
