@@ -144,7 +144,7 @@ var identicalReplacements = {
     "î": "ȋ",
     "ï": "ї",
     "j": "ј",
-    "k": "κĸк",
+    "k": "ĸк",
     "ɫ": "ɬᏐ",
     "m": "ⅿ", // The following don't work in some fonts: ՠ
     // n // The following don't work in some fonts: ո𝗇
@@ -164,7 +164,6 @@ var identicalReplacements = {
     "ţ": "țṭ",
     "ṭ": "țţ",
     // u // The following don't work in some fonts: ս
-    "v": "ꮩ",
     "w": "ԝꮃ",
     "x": "х",
     "y": "уү",
@@ -215,7 +214,7 @@ var approximateReplacements = {
     "ɪ": "ı",
     "ĭ": "ǐ",
     "j": "ϳ",
-    "k": "кκꮶ",
+    "k": "κкκꮶ",
     "ł": "ɫɬᏐ",
     "ɫ": "ł",
     "ɬ": "ł",
@@ -225,8 +224,8 @@ var approximateReplacements = {
     // u // The following don't work in some fonts: 𐓶
     "u": "υ",
     "ú": "ύ",
-    "v": "νⅴ", // The following have large paddings: ∨
-    "w": "ꮤ",
+    "v": "ꮩνⅴ", // The following have large paddings: ∨
+    "w": "ꮤ", // The following look different in some fonts: ꮃ
     "x": "ⅹ",
     "y": "γʏ"
 }
