@@ -87,7 +87,7 @@ var identicalReplacements = {
     "Ă": "Ӑ",
     "Â": "Ȃ",
     "B": "ВΒᏴꓐ", // The following don't work in some fonts: 𝖡
-    "C": "ꓚⅭ", // The following don't work in some fonts: C𝖢
+    "C": "ꓚ", // The following don't work in some fonts: C𝖢
     "D": "ᗞᎠⅮꓓ", // The following don't work in some fonts: 𝖣
     "Đ": "ÐƉ",
     "Ð": "ĐƉ",
@@ -133,7 +133,7 @@ var identicalReplacements = {
     "ă": "ӑ",
     "â": "ȃ",
     // The following don't work in some fonts: 𝖻. The following are invisible in some fonts: b‍
-    "c": "сϲᴄⅽ",
+    "c": "сϲᴄ",
     "d": "ⅾⅾ", // The following don't work in some fonts: 𝖽. The following look too different in some fonts: ԁ
     "e": "е", // The following don't work in some fonts: 𝖾
     "è": "ѐ",
@@ -146,9 +146,8 @@ var identicalReplacements = {
     "j": "ј",
     "k": "ĸк",
     "ɫ": "ɬᏐ",
-    "m": "ⅿ", // The following don't work in some fonts: ՠ
     // n // The following don't work in some fonts: ո𝗇
-    "o": "оօοჿ", // The following don't work in some fonts: 𐓪𐐬 // The following is looks too differnt in some fonts: ௦
+    "o": "оօο", // The following don't work in some fonts: 𐓪𐐬 // The following is looks too differnt in some fonts: ௦
     "ö": "ӧ",
     "ó": "όό",
     "ò": "ὸ",
@@ -182,7 +181,7 @@ var approximateReplacements = {
     "A": "ᗅ",
     "Ă": "ǍĀ",
     "B": "ᗷꕗ",
-    "C": "Ꮯᑕ",
+    "C": "ᏟᑕⅭ", // Ⅽ makes the next character uppercase on iOS
     "E": "ⴹ⋿ꗋ",
     "F": "Ϝ", // Ϝ does not look identical in some fonts
     "G": "Ⴚ",
@@ -204,7 +203,7 @@ var approximateReplacements = {
 
     "ă": "ǎā",
     // "b": // The following are broken in some fonts: ხ // The following look different in some fonts: ᏏЬƅ
-    "c": "ꮯⅽ", // "ꮯ" has a weird top right at least on iOS
+    "c": "ꮯⅽ", // "ꮯ" has a weird top right at least on iOS and "ⅽ" makes the next character after it uppercase
     "d": "ძ",
     "g": "ɡց",
     //"h": "հ", // "հ" looks like some arabic letter on iOS
@@ -218,7 +217,8 @@ var approximateReplacements = {
     "ł": "ɫɬᏐ",
     "ɫ": "ł",
     "ɬ": "ł",
-    "o": "ഠ", // The following look different in some fonts: ೦
+    "m": "ⅿ", // The following don't work in some fonts: ՠ. ՠ also makes the next character uppercase on iOS
+    "o": "ഠჿ", // The following look different in some fonts: ೦. ჿ is broken in Instagram on Android
     "p": "ρ",
     "s": "ടꮪꜱ", // ꜱ looks ok but doesn't work on e.g. Apple Watch
     // u // The following don't work in some fonts: 𐓶
