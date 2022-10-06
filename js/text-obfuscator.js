@@ -7,17 +7,13 @@ var identicalGroupReplacements = {
 
     "DZ": "Ǳ",
     "Dz": "ǲ",
-    "IJ": "Ĳ",
     "LJ": "Ǉ",
     "Lj": "ǈ",
     "NJ": "Ǌ",
     "Nj": "ǋ",
 
     "dz": "ǳ",
-    "ij": "ĳ",
     "lj": "ǉ",
-    "lm": "㏐",
-    "ln": "㏑",
     "nj": "ǌ"
 }
 
@@ -43,9 +39,15 @@ var approximateGroupReplacements = {
     "xi": "ⅺ",
     "xii": "ⅻ",
 
+
+    "IJ": "Ĳ",
+
     "ae": "æӕ",
     "bl": "Ы",
     "dz": "ʣ",
+    "ij": "ĳ",
+    "lm": "㏐",
+    "ln": "㏑",
     "log": "㏒",
     "ls": "ʪ",
     "lx": "㏓",
