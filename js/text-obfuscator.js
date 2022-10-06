@@ -86,7 +86,7 @@ var identicalReplacements = {
     "æ": "ӕ",
 
     "A": "АΑᎪꓮ", // The following don't work in some fonts: 𝖠
-    "Ă": "Ӑ",
+    "Ă": "ӐǍ",
     "Â": "Ȃ",
     "B": "ВΒᏴꓐ", // The following don't work in some fonts: 𝖡
     "C": "ꓚ", // The following don't work in some fonts: C𝖢
@@ -132,7 +132,7 @@ var identicalReplacements = {
     "Z": "ΖᏃჍꛉꓜ", // The following don't work in some fonts: 𝖹
 
     "a": "а", // The following don't work in some fonts: 𝖺
-    "ă": "ӑ",
+    "ă": "ӑǎ",
     "â": "ȃ",
     // The following don't work in some fonts: 𝖻. The following are invisible in some fonts: b‍
     "c": "сϲᴄ",
@@ -180,7 +180,7 @@ var approximateReplacements = {
     "6": "б",
 
     "A": "ᗅ",
-    "Ă": "ǍĀ",
+    "Ă": "Ā",
     "B": "ᗷꕗ",
     "C": "ᏟᑕⅭ", // Ⅽ makes the next character uppercase on iOS
     "D": "Ⅾ", // "Ⅾ" makes the next character uppercase on iOS
@@ -203,7 +203,7 @@ var approximateReplacements = {
     "W": "Ꮤ",
     // "X": "᙭Ꭓχ"
 
-    "ă": "ǎā",
+    "ă": "ā",
     // "b": // The following are broken in some fonts: ხ // The following look different in some fonts: ᏏЬƅ
     "c": "ꮯⅽ", // "ꮯ" has a weird top right at least on iOS and "ⅽ" makes the next character after it uppercase
     "d": "ძⅾ", // The following don't work in some fonts: 𝖽. The following look too different in some fonts: ԁ. "ⅾ" makes the next character uppercase on iOS
