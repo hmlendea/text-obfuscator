@@ -75,7 +75,6 @@ var identicalReplacements = {
     ">": "ᐳ",
 
     // 2 // The following don't work in some fonts: 𝟤
-    "0": "߀",
     "3": "З",
     "Ʒ": "Ӡ",
     "Ӡ": "Ʒ",
@@ -174,6 +173,7 @@ var identicalReplacements = {
 var approximateReplacements = {
     "'": "ʹ",
 
+    //"0": "߀", // This can turn the text left-to-right
     "3": "Ӡ", // The following look too different: Ʒ
     "Ӡ": "3З",
     "5": "Ƽ",
