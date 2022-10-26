@@ -75,7 +75,6 @@ var identicalReplacements = {
     ">": "ᐳ",
 
     // 2 // The following don't work in some fonts: 𝟤
-    "0": "߀",
     "3": "З",
     "Ʒ": "Ӡ",
     "Ӡ": "Ʒ",
@@ -174,6 +173,7 @@ var identicalReplacements = {
 var approximateReplacements = {
     "'": "ʹ",
 
+    //"0": "߀", // This can turn the text left-to-right
     "3": "Ӡ", // The following look too different: Ʒ
     "Ӡ": "3З",
     "5": "Ƽ",
@@ -248,15 +248,17 @@ function obfuscateText() {
         input = input.replace(group, replacement);
     }
 
-    for (var [group, candidates] of Object.entries(approximateGroupReplacements)) {
-        var replacement = group;
+    if ($("#approximateCharactersCheckbox").is(':checked') && approximateReplacements[character]) {
+        for (var [group, candidates] of Object.entries(approximateGroupReplacements)) {
+            var replacement = group;
 
-        if (Math.floor(Math.random() * 10) + 1 <= 6) {
-            var randomCandidateIndex = Math.floor(Math.random() * candidates.length);
-            replacement = candidates[randomCandidateIndex];
+            if (Math.floor(Math.random() * 10) + 1 <= 6) {
+                var randomCandidateIndex = Math.floor(Math.random() * candidates.length);
+                replacement = candidates[randomCandidateIndex];
+            }
+
+            input = input.replace(group, replacement);
         }
-
-        input = input.replace(group, replacement);
     }
 
     for (var i = 0; i < input.length; i++) {
