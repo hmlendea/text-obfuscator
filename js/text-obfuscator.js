@@ -248,15 +248,17 @@ function obfuscateText() {
         input = input.replace(group, replacement);
     }
 
-    for (var [group, candidates] of Object.entries(approximateGroupReplacements)) {
-        var replacement = group;
+    if ($("#approximateCharactersCheckbox").is(':checked') && approximateReplacements[character]) {
+        for (var [group, candidates] of Object.entries(approximateGroupReplacements)) {
+            var replacement = group;
 
-        if (Math.floor(Math.random() * 10) + 1 <= 6) {
-            var randomCandidateIndex = Math.floor(Math.random() * candidates.length);
-            replacement = candidates[randomCandidateIndex];
+            if (Math.floor(Math.random() * 10) + 1 <= 6) {
+                var randomCandidateIndex = Math.floor(Math.random() * candidates.length);
+                replacement = candidates[randomCandidateIndex];
+            }
+
+            input = input.replace(group, replacement);
         }
-
-        input = input.replace(group, replacement);
     }
 
     for (var i = 0; i < input.length; i++) {
