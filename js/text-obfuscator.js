@@ -4,6 +4,8 @@ var identicalGroupReplacements = {
     "!?": "⁉",
     "??": "⁇",
     "?!": "⁈",
+    "?!": "⁈",
+    "...": "…",
 
     "DZ": "Ǳ",
     "Dz": "ǲ",
@@ -79,7 +81,7 @@ var identicalReplacements = {
     "Ʒ": "Ӡ",
     "Ӡ": "Ʒ",
     "6": "Ꮾ",
-    "8": "𞣋",
+    // The following is utterly broken: 𞣋
 
     "Æ": "Ӕ",
     "æ": "ӕ",
@@ -88,7 +90,7 @@ var identicalReplacements = {
     "Ă": "ӐǍ",
     "Â": "Ȃ",
     "B": "ВΒᏴꓐ", // The following don't work in some fonts: 𝖡
-    "C": "ꓚ", // The following don't work in some fonts: C𝖢
+    // The following don't work in some fonts: C𝖢. The following is utterly broken: ꓚ
     "D": "ᗞᎠꓓ", // The following don't work in some fonts: 𝖣
     "Đ": "ÐƉ",
     "Ð": "ĐƉ",
@@ -128,7 +130,7 @@ var identicalReplacements = {
     "W": "ԜᎳꓪ", // The following don't work in some fonts: 𝖶
     "X": "ХⅩΧⵝꓫ", // The following don't work in some fonts: 𝖷
     "Y": "ΥҮꓬ", // The following don't work in some fonts: 𝖸
-    "Z": "ΖᏃჍꛉꓜ", // The following don't work in some fonts: 𝖹
+    "Z": "ΖᏃꓜ", // The following don't work in some fonts: 𝖹Ⴭꛉ
 
     "a": "а", // The following don't work in some fonts: 𝖺
     "ă": "ӑǎ",
