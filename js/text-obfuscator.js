@@ -6,6 +6,7 @@ var identicalGroupReplacements = {
     "?!": "⁈",
     "?!": "⁈",
     "...": "…",
+    " ": "     ",
 
     "DZ": "Ǳ",
     "Dz": "ǲ",
