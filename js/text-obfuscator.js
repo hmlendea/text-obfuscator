@@ -68,6 +68,8 @@ var identicalReplacements = {
     ",": "͵",
     ":": "։꞉",
     ";": ";",
+    "'": "′´ʹ‘’",
+    "\"": "”″",
     "|": "ǀ",
     "ǀ": "|",
     "/": "⁄⧸",
@@ -225,7 +227,7 @@ var approximateReplacements = {
     "ɬ": "ł",
     "m": "ⅿ", // The following don't work in some fonts: ՠ. ՠ also makes the next character uppercase on iOS
     "o": "ഠჿ", // The following look different in some fonts: ೦. ჿ is broken in Instagram on Android
-    "p": "ρ",
+    "p": "ρƿ",
     "s": "ടꮪꜱ", // ꜱ looks ok but doesn't work on e.g. Apple Watch
     // u // The following don't work in some fonts: 𐓶
     "u": "υ",
