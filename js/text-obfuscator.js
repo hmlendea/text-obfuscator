@@ -66,7 +66,7 @@ var approximateGroupReplacements = {
 var identicalReplacements = {
     "`": "՝",
     ",": "͵",
-    ":": "։",
+    ":": "։꞉",
     ";": ";",
     "|": "ǀ",
     "ǀ": "|",
