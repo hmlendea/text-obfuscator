@@ -7,17 +7,6 @@ var identicalGroupReplacements = {
     "?!": "⁈",
     "...": "…",
     " ": "     ",
-
-    "DZ": "Ǳ",
-    "Dz": "ǲ",
-    "LJ": "Ǉ",
-    "Lj": "ǈ",
-    "NJ": "Ǌ",
-    "Nj": "ǋ",
-
-    "dz": "ǳ",
-    "lj": "ǉ",
-    "nj": "ǌ"
 }
 
 var approximateGroupReplacements = {
@@ -42,13 +31,20 @@ var approximateGroupReplacements = {
     "xi": "ⅺ",
     "xii": "ⅻ",
 
-
+    "DZ": "Ǳ",
+    "Dz": "ǲ",
     "IJ": "Ĳ",
+    "LJ": "Ǉ",
+    "Lj": "ǈ",
+    "NJ": "Ǌ",
+    "Nj": "ǋ",
 
     "ae": "æӕ",
     "bl": "Ы",
+    "dz": "ǳ",
     "dz": "ʣ",
     "ij": "ĳ",
+    "lj": "ǉ",
     "lm": "㏐",
     "ln": "㏑",
     "log": "㏒",
@@ -58,8 +54,9 @@ var approximateGroupReplacements = {
     "mb": "㏔",
     "mil": "㏕",
     "mol": "㏖",
-    "Oy": "Ѹ",
+    "nj": "ǌ",
     "oy": "ѹ",
+    "Oy": "Ѹ",
     "ts": "ʦ"
 }
 
@@ -83,7 +80,6 @@ var identicalReplacements = {
     "3": "З",
     "Ʒ": "Ӡ",
     "Ӡ": "Ʒ",
-    "6": "Ꮾ",
     // The following is utterly broken: 𞣋
 
     "Æ": "Ӕ",
@@ -182,7 +178,7 @@ var approximateReplacements = {
     "3": "Ӡ", // The following look too different: Ʒ
     "Ӡ": "3З",
     "5": "Ƽ",
-    "6": "б",
+    "6": "бᏮ",
 
     "A": "ᗅᎪ",
     "Ă": "Ā",
@@ -202,9 +198,9 @@ var approximateReplacements = {
     "O": "ⵔ",
     "Ө": "ƟϴᎾ",
     "P": "ꓑᏢ",
-    "Q": "Ǫ",
+    "Q": "ǪႭ",
     "R": "ᎡꓣᏒ",
-    "S": "ꓢᏚՏ",
+    "S": "ꓢᏚՏႽ",
     "T": "ㄒᎢꔋ",
     "Ț": "Ҭ",
     // "U": // The following don't work in some fonts: 𞤋 // The following look too different in some fonts: ᑌ⋃
