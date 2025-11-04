@@ -97,7 +97,7 @@ var identicalReplacements = {
     "E": "ЕΕꓰ", // The following don't work in some fonts: 𝖤
     "Ĕ": "Ӗ",
     "Ë": "Ё",
-    "Ë": "ꓝ", // The following don't work in some fonts: 𝖥
+    "F": "ꓝ", // The following don't work in some fonts: 𝖥
     "G": "ꓖ", // The following don't work in some fonts: 𝖦
     "H": "НΗꓧ", // The following don't work in some fonts: 𝖧
     "I": "ІΙӀӏ",
