@@ -89,51 +89,51 @@ var identicalReplacements = {
     "Æ": "Ӕ",
     "æ": "ӕ",
 
-    "A": "АΑᎪꓮ", // The following don't work in some fonts: 𝖠
+    "A": "АΑꓮ", // The following don't work in some fonts: 𝖠
     "Ă": "ӐǍ",
     "Â": "Ȃ",
-    "B": "ВΒᏴꓐ", // The following don't work in some fonts: 𝖡
+    "B": "ВΒꓐ", // The following don't work in some fonts: 𝖡
     // The following don't work in some fonts: C𝖢. The following is utterly broken: ꓚ
-    "D": "ᗞᎠꓓ", // The following don't work in some fonts: 𝖣
+    "D": "ᗞꓓ", // The following don't work in some fonts: 𝖣
     "Đ": "ÐƉ",
     "Ð": "ĐƉ",
     "Ɖ": "ÐĐ",
-    "E": "ЕΕᎬꓰ", // The following don't work in some fonts: 𝖤
+    "E": "ЕΕꓰ", // The following don't work in some fonts: 𝖤
     "Ĕ": "Ӗ",
     "Ë": "Ё",
     "Ë": "ꓝ", // The following don't work in some fonts: 𝖥
-    "G": "Ꮐꓖ", // The following don't work in some fonts: 𝖦
-    "H": "НΗᎻꓧ", // The following don't work in some fonts: 𝖧
+    "G": "ꓖ", // The following don't work in some fonts: 𝖦
+    "H": "НΗꓧ", // The following don't work in some fonts: 𝖧
     "I": "ІΙӀӏ",
     "Î": "Ȋ",
     "Ï": "ЇΪ",
-    "J": "ЈᎫꓙ", // The following don't work in some fonts: 𝖩 // The following look different in some fonts: Ϳ
-    "K": "КKΚᏦꓗ", // The following don't work in some fonts: 𝖪
+    "J": "Јꓙ", // The following don't work in some fonts: 𝖩 // The following look different in some fonts: Ϳ
+    "K": "КKΚꓗ", // The following don't work in some fonts: 𝖪
     "Ḱ": "Ќ",
-    "L": "ⅬᏞꓡ", // The following don't work in some fonts: 𝖫𐐛
+    "L": "Ꮮꓡ", // The following don't work in some fonts: 𝖫𐐛
     "M": "МΜϺ", // The following don't work in some fonts: 𝖬
     "N": "Νꓠ", // The following don't work in some fonts: 𝖭
     "O": "ОΟՕꓳ", // The following don't work in some fonts: 𝖮𐓂𖫩
     "Ö": "Ӧ",
     "Ө": "Ѳθ",
-    "ϴ": "ƟᎾ",
-    "P": "РΡᏢ", // The following don't work in some fonts: 𝖯
+    "ϴ": "Ɵ",
+    "P": "РΡ", // The following don't work in some fonts: 𝖯
     "Q": "ԚႭ", // The following don't work in some fonts: 𝖰
-    "R": "Ꮢ", // The following don't work in some fonts: 𝖱
-    "S": "ЅᏚჽႽ", // The following don't work in some fonts: 𖫖𝖲
+    //"R": "", // The following don't work in some fonts: 𝖱
+    "S": "ЅჽႽ", // The following don't work in some fonts: 𖫖𝖲
     "Ș": "ŞṢ",
     "ŞṢȘ": "ȘṢ",
     "ṢȘ": "ȘŞ",
-    "T": "ТΤᎢꓔ", // The following don't work in some fonts: 𝖳 // The following combines with nearby letters: ߠ
+    "T": "ТΤꓔ", // The following don't work in some fonts: 𝖳 // The following combines with nearby letters: ߠ
     "Ț": "ŢṬ",
     "Ţ": "ȚṬ",
     "Ṭ": "ȚŢ",
     "U": "ꓴՍ", // The following don't work in some fonts: 𝖴𐓎
-    "V": "ᏙⅤⴸꛟꓦ", // The following don't work in some fonts: 𝖵
-    "W": "ԜᎳꓪ", // The following don't work in some fonts: 𝖶
-    "X": "ХⅩΧⵝꓫ", // The following don't work in some fonts: 𝖷
+    "V": "ⴸꛟꓦ", // The following don't work in some fonts: 𝖵
+    "W": "Ԝꓪ", // The following don't work in some fonts: 𝖶
+    "X": "ХΧⵝꓫ", // The following don't work in some fonts: 𝖷
     "Y": "ΥҮꓬ", // The following don't work in some fonts: 𝖸
-    "Z": "ΖᏃꓜ", // The following don't work in some fonts: 𝖹Ⴭꛉ
+    "Z": "Ζꓜ", // The following don't work in some fonts: 𝖹Ⴭꛉ
 
     "a": "а", // The following don't work in some fonts: 𝖺
     "ă": "ӑǎ",
@@ -184,29 +184,35 @@ var approximateReplacements = {
     "5": "Ƽ",
     "6": "б",
 
-    "A": "ᗅ",
+    "A": "ᗅᎪ",
     "Ă": "Ā",
-    "B": "ᗷꕗ",
+    "B": "Ᏼᗷꕗ",
     "C": "ᏟᑕⅭ", // Ⅽ makes the next character uppercase on iOS
-    "D": "Ⅾ", // "Ⅾ" makes the next character uppercase on iOS
-    "E": "ⴹ⋿ꗋ",
+    "D": "ᎠⅮ", // "Ⅾ" makes the next character uppercase on iOS
+    "E": "Ꭼⴹ⋿ꗋ",
     "F": "Ϝ", // Ϝ does not look identical in some fonts
-    "G": "Ⴚ",
+    "G": "ᏀႺ",
+    "H": "Ꮋ",
     "I": "ꓲⅠⵏߊꕯ", // Stretch // The following look different on some fonts: ꕯ // The following don't work on some fonts: 𝖨𞥑 𞠢
     // The following looks too different: Լ
+    "J": "Ꭻ",
+    "K": "Ꮶ",
+    "L": "Ⅼ",
     "M": "ꓟᎷⅯ",
     "O": "ⵔ",
     "Ө": "ƟϴᎾ",
-    "P": "ꓑ",
+    "P": "ꓑᏢ",
     "Q": "Ǫ",
-    "R": "Ꭱꓣ",
-    "S": "ꓢՏ",
-    "T": "ㄒꔋ",
+    "R": "ᎡꓣᏒ",
+    "S": "ꓢᏚՏ",
+    "T": "ㄒᎢꔋ",
     "Ț": "Ҭ",
     // "U": // The following don't work in some fonts: 𞤋 // The following look too different in some fonts: ᑌ⋃
-    "V": "ᐯ",
-    "W": "Ꮤ",
+    "V": "ᐯᏙⅤ",
+    "W": "ᎳᏔ",
     // "X": "᙭Ꭓχ"
+    "X": "Ⅹ",
+    "Z": "Ꮓ",
 
     "ă": "ā",
     // "b": // The following are broken in some fonts: ხ // The following look different in some fonts: ᏏЬƅ
