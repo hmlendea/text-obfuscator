@@ -118,9 +118,9 @@ var identicalReplacements = {
     "Ө": "Ѳθ",
     "ϴ": "Ɵ",
     "P": "РΡ", // The following don't work in some fonts: 𝖯
-    "Q": "ԚႭ", // The following don't work in some fonts: 𝖰
+    "Q": "Ԛ", // The following don't work in some fonts: 𝖰
     //"R": "", // The following don't work in some fonts: 𝖱
-    "S": "ЅჽႽ", // The following don't work in some fonts: 𖫖𝖲
+    "S": "Ѕჽ", // The following don't work in some fonts: 𖫖𝖲
     "Ș": "ŞṢ",
     "ŞṢȘ": "ȘṢ",
     "ṢȘ": "ȘŞ",
