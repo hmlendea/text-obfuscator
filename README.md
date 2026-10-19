@@ -31,3 +31,9 @@ When doing so, please:
 - Raise a new [issue](https://github.com/hmlendea/text-obfuscator/issues) for problems or suggestions
 
 See the [contributing guidelines](./CONTRIBUTING.md) for details on how to report issues, suggest enhancements, and submit changes.
+
+## 🔒 Security
+
+The Text Obfuscator is a client-side tool that processes text entirely within the user's browser. No data is transmitted to external servers, which minimises the attack surface.
+
+For information on reporting security vulnerabilities, see [SECURITY.md](./SECURITY.md).
