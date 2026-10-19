@@ -298,9 +298,26 @@ function obfuscateText() {
 }
 
 function copyText() {
-    var copyText = document.getElementById("output");
+    var output = document.getElementById("output");
+
+    output.focus();
+    output.select();
+    output.setSelectionRange(0, output.value.length);
+
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(output.value).catch(function () {
+            fallbackCopy(output);
+        });
+        return;
+    }
+
+    fallbackCopy(output);
+}
+
+function fallbackCopy(copyText) {
+    copyText.focus();
     copyText.select();
-    copyText.setSelectionRange(0, 99999);
+    copyText.setSelectionRange(0, copyText.value.length);
 
     document.execCommand("copy");
 }
