@@ -5,3 +5,7 @@
 Tool to replace characters in a given text with random equivalents that are visually identical.
 
 Use it here: https://hmlendea.github.io/text-obfuscator
+
+## 📜 Code of Conduct
+
+See the [Code of Conduct](./CODE_OF_CONDUCT.md) for the standards of conduct expected in all project spaces.
