@@ -37,3 +37,7 @@ See the [contributing guidelines](./CONTRIBUTING.md) for details on how to repor
 The Text Obfuscator is a client-side tool that processes text entirely within the user's browser. No data is transmitted to external servers, which minimises the attack surface.
 
 For information on reporting security vulnerabilities, see [SECURITY.md](./SECURITY.md).
+
+## 🏗️ Architecture
+
+See the [Architecture](./ARCHITECTURE.md) for details on the system design, components, and implementation approach.
