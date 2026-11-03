@@ -30,6 +30,7 @@ Use it here: https://hmlendea.github.io/text-obfuscator
 
 - Replace characters in text with visually identical Unicode equivalents.
 - Optionally approximate characters for additional obfuscation.
+- Optionally insert zero-width spaces at random positions (10–50% of input length) for further obfuscation.
 - Copy the obfuscated result to the clipboard with a single click.
 
 ## 🎯 Use Cases
@@ -44,8 +45,9 @@ Open the application at https://hmlendea.github.io/text-obfuscator.
 
 1. Type text into the input field.
 2. Optionally enable the "Approximate characters" checkbox for additional replacements.
-3. Click **Obfuscate** to generate the obfuscated output.
-4. Click **Copy** to copy the result to the clipboard.
+3. Optionally enable the "Add zero-width spaces" checkbox to insert invisible characters at random positions.
+4. Click **Obfuscate** to generate the obfuscated output.
+5. Click **Copy** to copy the result to the clipboard.
 
 ## 🖥️ System Requirements
 

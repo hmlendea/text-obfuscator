@@ -294,6 +294,19 @@ function obfuscateText() {
         }
     }
 
+    if ($("#zeroWidthSpacesCheckbox").is(':checked')) {
+        var zeroWidthSpace = "\u200B";
+        var inputLength = input.length;
+        var minSpaces = Math.ceil(inputLength * 0.1);
+        var maxSpaces = Math.floor(inputLength * 0.5);
+        var spaceCount = minSpaces + Math.floor(Math.random() * (maxSpaces - minSpaces + 1));
+
+        for (var j = 0; j < spaceCount; j++) {
+            var randomPosition = Math.floor(Math.random() * (output.length + 1));
+            output = output.slice(0, randomPosition) + zeroWidthSpace + output.slice(randomPosition);
+        }
+    }
+
     $("#output").val(output);
 }
 

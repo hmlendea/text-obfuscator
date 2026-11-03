@@ -68,8 +68,8 @@ The principal runtime sequence is:
 
 1. **Page load:** `index.html` is loaded by the browser, including CSS styling and JavaScript.
 2. **Initialisation:** DOM elements are rendered; event listeners are attached.
-3. **User interaction:** User enters text in the input field and clicks the "Obfuscate" button, or toggles the "Approximate characters" checkbox.
-4. **Processing:** The `obfuscateText()` function iterates through each character of the input, applying replacements from the `identicalReplacements` and `approximateReplacements` maps.
+3. **User interaction:** User enters text in the input field and clicks the "Obfuscate" button, or toggles the "Approximate characters" and "Add zero-width spaces" checkboxes.
+4. **Processing:** The `obfuscateText()` function iterates through each character of the input, applying replacements from the `identicalReplacements` and `approximateReplacements` maps. If the zero-width spaces option is enabled, a random number of zero-width spaces (10–50% of input length) are inserted at random positions in the output.
 5. **Output display:** The obfuscated text is populated into the output field, which is disabled (read‑only).
 6. **Copy functionality:** User can click the "Copy" button to copy the obfuscated text to the clipboard.
 
@@ -88,7 +88,7 @@ flowchart TD
 
 | Component | Responsibility | Principal Dependencies | Lifetime or Ownership |
 |-----------|----------------|------------------------|-----------------------|
-| `index.html` | Defines the web page structure, input/output fields, and UI controls | Bootstrap CSS, Font Awesome icons, jQuery | Loaded on each page visit; static asset |
+| `index.html` | Defines the web page structure, input/output fields, and UI controls (including "Approximate characters" and "Add zero-width spaces" checkboxes) | Bootstrap CSS, Font Awesome icons, jQuery | Loaded on each page visit; static asset |
 | `css/custom.css` | Provides custom styling for the obfuscator interface | None (pure presentation) | |
 | `js/text-obfuscator.js` | Contains the obfuscation logic, character replacement maps, and the `obfuscateText()` function | None (pure logic) | |
 
@@ -160,8 +160,9 @@ The project does not have an automated test suite. Verification is performed man
 2. Enter text in the input field.
 3. Click "Obfuscate" and verify the output field contains obfuscated text.
 4. Toggle "Approximate characters" checkbox and verify additional character replacements are applied.
-5. Click "Copy" and verify the obfuscated text is copied to the clipboard.
-6. Test with various input types: empty text, special characters, long text, Unicode text.
+5. Toggle "Add zero-width spaces" checkbox and verify invisible characters are inserted at random positions (output length increases).
+6. Click "Copy" and verify the obfuscated text is copied to the clipboard.
+7. Test with various input types: empty text, special characters, long text, Unicode text.
 
 **Material coverage gaps or explicit test constraints:**
 - No unit tests exist for the obfuscation logic.
@@ -180,9 +181,3 @@ The project does not have an automated test suite. Verification is performed man
 - [index.html](index.html)
 - [js/text-obfuscator.js](js/text-obfuscator.js)
 - [css/custom.css](css/custom.css)
-
----
-
-*Architecture Document – Text Obfuscator*
-*Generated for the Text Obfuscator project (hmlendea/text-obfuscator)*
-*Last updated: 2026-04-10*
