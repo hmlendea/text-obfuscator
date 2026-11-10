@@ -9,6 +9,7 @@ Tool to replace characters in a given text with random equivalents that are visu
 
 ## 📑 Table of Contents
 
+- [Demo](#demo)
 - [Capabilities](#capabilities)
 - [Use Cases](#use-cases)
 - [Usage](#usage)
@@ -25,6 +26,10 @@ Tool to replace characters in a given text with random equivalents that are visu
 - [Security](#security)
 - [Project Engagement](#project-engagement)
 - [License](#license)
+
+## 🎬 Demo
+
+Try the hosted application on [GitHub Pages](ttps://hmlendea.github.io/text-obfuscator).
 
 ## ✨ Capabilities
 
